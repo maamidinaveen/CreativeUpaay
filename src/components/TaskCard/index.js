@@ -2,7 +2,7 @@ import "./index.css";
 
 const TaskCard = (props) => {
   const { task } = props;
-  const { title, status, priority, dueDate } = task;
+  const { title, priority } = task;
 
   return (
     <div className="task-card">
