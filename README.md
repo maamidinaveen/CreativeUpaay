@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Creative Upaay Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React.js** dashboard UI replicating the design from Figma, with task management, filtering, and persistent state using **Redux** and **Local Storage**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Figma Design**
 
-### `npm start`
+[View Figma Design](https://docs.google.com/document/d/1f3WtVKAhxMyPSBIMgwZLNATjTtypqHrAagZ-J8iNv7Y/edit?tab=t.0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Features**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Dashboard UI with three task sections:
+  - **To Do**
+  - **In Progress**
+  - **Done**
+- Add tasks dynamically with:
+  - Title
+  - Priority (Low, Medium, High)
+  - Status (To Do, In Progress, Done)
+  - Due Date
+- Filter tasks by:
+  - Priority
+  - Due Date (Today, Tomorrow, This Week, Overdue)
+- State persistence using Local Storage
+- Routing between **Home** and **Add Task** pages using React Router
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Technologies Used**
 
-### `npm run build`
+- **React.js** – Frontend framework
+- **Redux** – State management
+- **React Router DOM** – Routing
+- **Local Storage** – Persisting tasks & filters
+- **CSS** – Custom styling
+- Optional: Material UI / Chakra UI / Tailwind CSS (for future UI upgrades)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Project Structure**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/
+├─ components/
+│ ├─ AddTaskPage/
+│ ├─ Content/
+│ ├─ Filter/
+│ ├─ Header/
+│ ├─ SideBar/
+│ └─ TaskCard/
+├─ redux/
+│ ├─ actions.js
+│ ├─ reducer.js
+│ └─ store.js
+├─ App.js
+└─ index.js
 
-### `npm run eject`
+**Key Components:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `SideBar` – Left navigation with projects & menu
+- `Header` – Top header with search, notifications, profile
+- `Content` – Main dashboard showing task columns
+- `TaskCard` – Individual task card
+- `Filter` – Dropdown filters for priority & due date
+- `AddTaskPage` – Form to add new tasks
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Usage**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Navigate between the Home and Add Task pages.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Add a new task using the form (title, priority, status, due date).
 
-## Learn More
+- Filter tasks using the priority and due date dropdowns.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- View tasks dynamically in each section: To Do, In Progress, Done.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- State is persisted, so tasks remain on page refresh.
 
-### Code Splitting
+**Future Enhancements**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Drag-and-drop functionality to move tasks between columns
 
-### Analyzing the Bundle Size
+Dynamic task descriptions in TaskCard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Responsive layout for mobile screens
 
-### Making a Progressive Web App
+Interactive notifications for task updates
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Integration with backend API for persistent multi-user data
 
-### Advanced Configuration
+### **Running setup**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Navigate to the project folder - command : cd creative-upaay-dashboard
 
-### Deployment
+Install dependencies - command : npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Running the Application- command: npm start
