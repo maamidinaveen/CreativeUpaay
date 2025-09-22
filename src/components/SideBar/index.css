@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.side-bar-container {
+  width: 33%;
+  min-height: 100vh;
+  border-right: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .side-bar-container {
+    width: 15%;
+  }
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid #dbdbdb;
+  height: 40px;
+}
+
+.image-profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  margin-right: 10px;
+}
+
+.project-name {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 25px;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.category-image {
+  margin-right: 15px;
+}
+
+.option-name {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #787486;
+}
+
+.line {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #d8d9db;
+}
+
+.my-projects-container {
+  margin-top: 20px;
+}
+
+.projects-heading-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.myprojects-heading {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #787486;
+}
+
+.plus-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.project-name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5030e514;
+  padding: 20px;
+}
+
+.project-name-image-container {
+  display: flex;
+  align-items: center;
+}
+
+.ellipse {
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+}
+
+.project-name {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.three-dots-icon {
+  margin-top: 2px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.name {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #787486;
+}
+
+.footer-card {
+  background-image: url("https://res.cloudinary.com/dxsq3yesd/image/upload/v1758446587/Union_gy8yel.png");
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lamp-container {
+  background-color: #f5f5f5;
+}
+
+.lamp-image {
+  position: absolute;
+  left: 45%;
+  top: 8%;
+}
+
+.footer-name {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.description {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 15px;
+  color: #787486;
+}
+
+.write-message {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
